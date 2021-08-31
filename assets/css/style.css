@@ -368,9 +368,37 @@ header h1 a:hover {  color: #00993b;}
 .hiddenBtn {
   display: none;
 } 
-.kl123{
-  color: #000;
+/* ----------------------------------------statewise details page start --------------------------- */
+.list_sec {
+  padding: 100px 0;
+  background-color: #02df57;
 }
+
+.list_sec form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list_sec .select {
+  width: 60%;
+  padding: 15px 25px;
+  border: 0;
+  color: #00a400;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+}
+
+.list_sec .select option {padding: 50px 0;}
+
+/* ----------------------------------------statewise details  page end --------------------------- */
 
 
 

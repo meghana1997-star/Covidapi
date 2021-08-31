@@ -5,7 +5,6 @@
 
 <head>
   <meta charset="utf-8" />
-
   <title>Client</title>
 
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
@@ -53,54 +52,51 @@
         </nav>
       </div>
     </header>
+    <!--header section end-->
+    <!--main starts here-->
+    <main>
+      <section class="list_sec">
+        <div class="wrapper">
+          <form action="#FIXME">
+            <select name='select-state' class="select">
+              <option value="Select state name">-- select state --</option>
+            </select>
+          </form>
+          <div class="result load" class="results">
+            <ul class="statewise">
+              <li>
 
-    <body>
-      <!--container starts here-->
-      <div class="container">
-        <!--header starts here-->
-        <header>
+                <h4>CONFIRMED</h4>
+                <h4 class="dateconfirmed">${value.confirmed}</h4>
+              </li>
+              <li>
 
-        </header>
-        <!--header ends here-->
+                <h4>ACTIVE</h4>
+                <h4 class="dateactive">${value.active}</h4>
+              </li>
+              <li>
 
-        <!--main starts here-->
-        <main>
-          <section id="list_sec">
-            <div class="wrapper">
-              <form action="#FIXME">
-                <select name='select-state' class="select">
-                  <option value="Select state name">-- select state --</option>
-                </select>
-              </form>
+                <h4>RECOVERED</h4>
+                <h4 class="daterecovered">${value.recovered}</h4>
+              </li>
+              <li>
 
-              <div class="result load" id="results">
-                <ul class="statewise">
+                <h4>DEATHS</h4>
+                <h4 class="datedeaths">${value.deaths}</h4>
+              </li>
 
-                </ul>
-              </div>
-
-
-            </div>
-          </section>
-        </main>
-        <!--main ends here-->
-
-
-        <!-- footer top end -->
-
-        <!-- footer bottom start -->
-
-        <!-- footer bottom end -->
-
-        <!--footer ends here-->
-      </div>
-      <!--container ends here-->
-
-      <!-- jq cdn -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--main ends here-->
 
 
-      <!-- external javascript link -->
-      <script src="assets/js/script.js"></script>
-    </body>
+  </div>
+
+  <!-- external javascript link -->
+  <script src="assets/js/script.js"></script>
+</body>
 
 </html>
