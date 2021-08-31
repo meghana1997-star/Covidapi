@@ -2,57 +2,134 @@
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Client</title>
+<head>
+  <meta charset="utf-8" />
 
-    <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-    <!-- <meta name="description" lang="en" content=""> -->
+  <title>Client</title>
 
-    <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-    <!-- <meta name="keywords" lang="en" content=""> -->
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <!-- <meta name="description" lang="en" content=""> -->
 
-    <!-- View-port Basics: http://mzl.la/VYREaP -->
-    <!-- This meta tag is used for mobile device to display the page without any zooming,
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <!-- <meta name="keywords" lang="en" content=""> -->
+
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 
-    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-    <link rel="shortcut icon" href="favicon.ico" />
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
 
-    <!--font-awesome link for icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" />
 
-    <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
-    <!--[if lt IE 9]>
+  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
+  <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-    <!--container start-->
-    <div class="container">
-      <!--header section start-->
-      <header></header>
-      <!--header section start-->
-      <!--main section start-->
-      <main></main>
-      <!--main section end-->
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--header section start-->
+    <header>
+      <div class="wrapper">
+        <h1>
+          <a href="#FIXME" title="Covid">COVIDAPP</a>
+        </h1>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="index.html" title="Home" class="active">HOME</a></li>
+            <li><a href="state.html" title="Statewise">STATEWISE</a></li>
+            <li><a href="datewise.html" title="Datewise">DATEWISE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--header section start-->
+    <!--main section start-->
+    <main>
+      <section class="stay-safe">
+        <div class="wrapper">
+          <figure class="corona"><img src="assets/images/corona-virus.gif" alt="Corona"></figure>
+          <div class="staysafe-text">
+            <h2>Let's stay safe and fight against the Corona Virus.</h2>
+          </div>
+        </div>
+      </section>
 
-      <!--footer section start-->
-      <footer></footer>
-      <!--footer section end-->
-    </div>
-    <!--container end-->
+      <section class="covid-heading">
+        <div class="wrapper">
+          <h3><span class="covid-19"> COVID-19 </span> STATEWISE TRACKER LIVE <span class="india"> INDIA </span></h3>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+
+          <ul class="statewise">
+            <li>
+
+              <h4>CONFIRMED</h4>
+              <h4 class="total-cases">0</h4>
+            </li>
+            <li>
+
+              <h4>ACTIVE</h4>
+              <h4 class="active-cases">0</h4>
+            </li>
+            <li>
+
+              <h4>RECOVERED</h4>
+              <h4 class="recovered">0</h4>
+            </li>
+            <li>
+
+              <h4>DEATHS</h4>
+              <h4 class="total-deaths">0</h4>
+            </li>
+          </ul>
+
+
+
+          <div class="statewise-updates">
+            <ul class="state-header">
+              <li></li>
+
+              <li>STATE</li>
+              <li>CONFIRMED</li>
+              <li>ACTIVE</li>
+              <li>RECOVERED</li>
+              <li>DEATHS</li>
+            </ul>
+            <ul class="state-data">
+              <li></li>
+              <li>STATE</li>
+              <li>CONFIRMED</li>
+              <li>ACTIVE</li>
+              <li>RECOVERED</li>
+              <li>DEATHS</li>
+            </ul>
+          </div>
+          <a href="#FIXME" title="LoadMoreResults" class="fetchBtn">Load More Results</a>
+        </div>
+      </section>
+
+    </main>
+    <!--main section end-->
+
+    <!--footer section start-->
+    <footer></footer>
+    <!--footer section end-->
+  </div>
+  <!--container end-->
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/vendor/jQuery/jquery-3.4.1.min.js"></script>
+
+</body>
+
 </html>
