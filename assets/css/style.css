@@ -269,19 +269,10 @@ header h1 a:hover {  color: #00993b;}
 }
 
 .corona{
-  flex-basis: 28%;
+  flex-basis: 18%;
 } 
 
-.covid-heading{
-  background-color: #50bbe0;
-  padding: 39px 32px;
-}
-.covid-heading h3{
-  font-size:35px;
-  color:#f8f1f1;
-  text-align: center;
-  
-}
+
 .covid-19{
   background-color: red;
   padding:5px;
@@ -307,25 +298,7 @@ header h1 a:hover {  color: #00993b;}
   100%{background-color: blue;}
 }
 
-.statewise{
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 44px 75px;
-}
 
-.statewise li{
-  width: 23%;
-  border-radius: 5px;
-  background-color: #fff;
-  margin-bottom: 10px;
-}
-
-.statewise h4{
-  padding: 16px;
-  font-size: 21px;
-  font-weight: 600;
-}
 
 .statewise-updates{
   width:100%;
@@ -351,23 +324,168 @@ header h1 a:hover {  color: #00993b;}
   border-spacing: 0;
 }
 
-.state-data:nth-child(even){
-  background-color: #fafafa;
+/* india-updates section start*/
+.india-updates{
+  background-color: #fe7371;
+  padding: 39px 32px;
 }
-.state-data ul:nth-child(odd){
-  background-color: #424242;
-  color:#fafafa;
+.india-updates h3{
+  font-size:35px;
+  color:#f8f1f1;
+  text-align: center;  
 }
-.state-data li{
-  padding: 15px 0;
+.state-data {
+ 
+  margin: 38px 0 28px 26px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
 }
-.state-data ul li{
-  padding: 15px 22px;
+.state-data li {
+  display: block; 
+  flex-basis: 19.2%;
+}
+
+.info li {
+  padding: 24px 0;
+  font-size: 14px;
+  background-color: white;
+  text-align: center;
+}
+
+.info h4 {
+  font-size: 25px;
+ 
+}
+
+.info li:first-child {
+  padding: 4px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.info-two li:first-child, .info-four li:first-child {
+  background-color: #616161;
+}
+
+.fetch{
+  text-align: center;
+}
+.fetchBtn{
+  padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+.fetch a:hover{
+  background-color: #fff;
+  color: #00a400;
+  font-weight: 600;
 }
 
 .hiddenBtn {
   display: none;
-} 
+}
+/* india-updates section end*/
+
+.corona-virus .wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; 
+  padding:20px 0;
+}
+
+.corona-virus figure{
+  flex-basis:47%;
+}
+
+.corona-text h4{
+  font-size: 50px;
+}
+
+.corona-text p{
+  font-size: 18px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.corona-text {
+  flex-basis: 50%;
+}
+.corona-text .para{
+  padding-top: 19px;
+}
+
+/* coronavirus symptoms section start */
+.corona-symptoms h4{
+  font-size: 50px;
+  text-align: center;
+}
+
+.corona-symptoms ul{
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.corona-symptoms li{
+  flex-basis: 12%;
+  margin: 10px 0;
+}
+
+.corona-symptoms p{
+  text-align: center;
+}
+
+/* coronavirus symptoms section end */
+
+/* prevention section start*/
+.prevent-section h5{
+  font-size: 50px;
+  text-align: center;
+}
+
+.prevent-section ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.prevent-section p {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.prevent-section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+  -ms-flex-preferred-size: 26%; 
+  flex-basis: 26%;
+  padding: 12px;
+}
+
+.prevent-section figure{
+  -ms-flex-preferred-size: 88%; 
+  flex-basis:88%;
+}
+
+  /*prevention section end*/
+
+ 
 /* ----------------------------------------statewise details page start --------------------------- */
 .list_sec {
   padding: 100px 0;
@@ -379,11 +497,11 @@ header h1 a:hover {  color: #00993b;}
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .list_sec .select {
