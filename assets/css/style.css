@@ -185,7 +185,7 @@ header h1 a {
   font-weight: 900;
 }
 
-header h1 a:hover {  color: #00993b;}
+header h1 a:hover { color: #fe7371;}
 .main-menu { 
   display: -webkit-box; 
   display: -ms-flexbox; 
@@ -197,42 +197,26 @@ header h1 a:hover {  color: #00993b;}
 
 .main-menu a {
   font-size: 21px;
-    font-weight: 600;
-    text-transform: capitalize;
+  font-weight: 600;
+  text-transform: capitalize;
   margin: 0 18px;
-  display: inline-block;
-  position: relative;
+  
   color: #000;
   -webkit-transition: ease .4s;
   -o-transition: ease .4s;
   transition: ease .4s;
 }
 
-.main-menu a::after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
-  background-color: #000;
-  -webkit-transition: ease .4s;
-  -o-transition: ease .4s;
-  transition: ease .4s;
-}  
-.main-menu a.active{ color:red; }
-
-.main-menu a:hover::after {
-  -webkit-transform:scale(1);
-  -ms-transform:scale(1);
-  transform:scale(1)
+.main-menu a.active{
+  color:#fe7371; 
+  text-decoration: underline;
 }
+.main-menu a:hover{
+  color:#fe7371; 
+  text-decoration: underline;
+}
+
+
 
 
 
@@ -253,84 +237,43 @@ header h1 a:hover {  color: #00993b;}
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-around;
-      padding: 38px;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  padding: 68px;
 }
 
 .staysafe-text {
   font-size: 50px;
     
     text-align: center;
+    -ms-flex-preferred-size: 41%;
     flex-basis: 41%;
 }
 
 .corona{
+  -ms-flex-preferred-size: 18%;
   flex-basis: 18%;
 } 
 
 
-.covid-19{
-  background-color: red;
-  padding:5px;
-  border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-  text-shadow: 0 8px 10px rgba(0,0,0,0.5);
-}
-
-.india{
-  background-color: blue;
-  padding:5px;
-  border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-  text-shadow: 0 8px 10px rgba(0,0,0,0.5);
-  animation: india 3s alternate infinite;
-}
-
-@keyframes india{
-  0%{background-color: green;}
-  40%{background-color:red;}
-  60%{background-color:red;}
-  80%{background-color:blue;}
-  100%{background-color: blue;}
-}
 
 
 
-.statewise-updates{
-  width:100%;
-  padding: 15px 10px;
-  margin:10px 0;
-  text-align: center;
-  border-spacing: 0;
-}
 
-.state-header{
-  display: flex;
-  justify-content: space-between;
-  background-color:#37474f;
-  color:#fafafa;
-  position: -webkit-sticky;
-  position: sticky;
-  top:0;
-  z-index: 1;
-}
-.state-header li{
-  padding: 15px 0;
-  border: none;
-  border-spacing: 0;
-}
+
 
 /* india-updates section start*/
 .india-updates{
-  background-color: #fe7371;
+  background-color:#4dbadf;
   padding: 39px 32px;
 }
 .india-updates h3{
-  font-size:35px;
+  font-size: 50px;
+  word-spacing: 12px;
+  font-weight: 600;
   color:#f8f1f1;
   text-align: center;  
 }
@@ -343,7 +286,8 @@ header h1 a:hover {  color: #00993b;}
 }
 .state-data li {
   display: block; 
-  flex-basis: 19.2%;
+  -ms-flex-preferred-size: 19%;
+  flex-basis: 19%;
 }
 
 .info li {
@@ -379,7 +323,7 @@ header h1 a:hover {  color: #00993b;}
 
 .fetch a:hover{
   background-color: #fff;
-  color: #00a400;
+  color: #fe7371;
   font-weight: 600;
 }
 
@@ -398,15 +342,17 @@ header h1 a:hover {  color: #00993b;}
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; 
-  padding:20px 0;
+  padding: 143px 0;
 }
 
 .corona-virus figure{
+  -ms-flex-preferred-size: 47%;
   flex-basis:47%;
 }
 
 .corona-text h4{
-  font-size: 50px;
+  font-size: 45px;
+  padding-bottom: 22px;
 }
 
 .corona-text p{
@@ -416,6 +362,7 @@ header h1 a:hover {  color: #00993b;}
 }
 
 .corona-text {
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 .corona-text .para{
@@ -431,8 +378,8 @@ header h1 a:hover {  color: #00993b;}
 .corona-symptoms ul{
   display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 0;
+    align-items:center;
+    padding: 77px 0;
 }
 
 .corona-symptoms li{
@@ -442,11 +389,15 @@ header h1 a:hover {  color: #00993b;}
 
 .corona-symptoms p{
   text-align: center;
+  padding-top: 15px;
+    font-size: 18px;
 }
 
 /* coronavirus symptoms section end */
 
 /* prevention section start*/
+.prevent-section{ padding: 65px 0; }
+
 .prevent-section h5{
   font-size: 50px;
   text-align: center;
@@ -456,7 +407,7 @@ header h1 a:hover {  color: #00993b;}
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 61px 0;
 }
 
 .prevent-section p {
@@ -484,12 +435,44 @@ header h1 a:hover {  color: #00993b;}
 }
 
   /*prevention section end*/
-
- 
+  
 /* ----------------------------------------statewise details page start --------------------------- */
 .list_sec {
   padding: 100px 0;
-  background-color: #02df57;
+  background-color: #fe7371;
+}
+
+.list_sec h2{
+  font-size: 31px;
+  word-spacing: 5px;
+  color:#f8f1f1;
+  text-align: center;
+  
+}
+
+.covid-19{
+  background-color: red;
+  padding:5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  text-shadow: 0 8px 10px rgba(0,0,0,0.5);
+}
+
+.india{
+  background-color: blue;
+  padding:5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  text-shadow: 0 8px 10px rgba(0,0,0,0.5);
+  animation: india 3s alternate infinite;
+}
+
+@keyframes india{
+  0%{background-color: green;}
+  40%{background-color:red;}
+  60%{background-color:red;}
+  80%{background-color:blue;}
+  100%{background-color: blue;}
 }
 
 .list_sec form {
@@ -502,19 +485,40 @@ header h1 a:hover {  color: #00993b;}
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 61px 0;
 }
 
 .list_sec .select {
   width: 60%;
   padding: 15px 25px;
   border: 0;
-  color: #00a400;
+  color: #fe7371;
   font-size: 16px;
   font-weight: 600;
   outline: 0;
 }
 
 .list_sec .select option {padding: 50px 0;}
+
+.statewise{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 44px 75px;
+}
+
+.statewise li{
+  width: 23%;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.statewise h4{
+  padding: 16px;
+  font-size: 21px;
+  font-weight: 600;
+}
 
 /* ----------------------------------------statewise details  page end --------------------------- */
 
@@ -528,12 +532,227 @@ header h1 a:hover {  color: #00993b;}
 /*=================================
   footer styling starts here
 =================================*/ 
+footer { 
+  background-color: #000;
+  color: #fff;
+}
+
+footer a { color: #fff; }
+
+footer h6 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* footer up start */
+.footer-up { 
+  padding: 40px 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 56%;
+  flex-basis: 56%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-menu li {
+  display: block;
+  -ms-flex-preferred-size: 31%;
+  flex-basis: 31%;
+}
+
+.footer-submenu a,
+.navigation-list a {
+  padding: 12px 0;
+  font-size: 17px;
+  font-weight: bold;
+  -webkit-transition: ease .4s;
+  -o-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.footer-submenu a:hover,
+.navigation-list a:hover { text-decoration: underline; }
+
+.contact { -ms-flex-preferred-size: 35%; flex-basis: 35%; }
+
+/* Social icon start */
+.social-list {
+  width: 60%;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.social-list li { 
+  margin: 8px 5px 8px 0;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+.social-list li { 
+  text-indent: -99999px;
+  float: left;
+}
+
+.social-list a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+}
+
+.social-list a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: fontAwesome;
+  font-size: 25px;
+  color: #353a3e;
+  -webkit-transition: ease .4s;
+  -o-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.facebook::after { content: '\f09a'; }
+.instagram::after { content: '\f16d'; }
+.twitter::after { content: '\f099'; }
+.linkdin::after { content: '\f0e1'; }
+.youtube::after { content: '\f167'; }
+.flicker::after { content: '\f16e'; }
+.android::after { content: '\f17b'; }
+.applestore::after { content: '\f179'; }
+
+.social-list a:hover::after { opacity: .5; }
 
 
 
+.error { 
+  display: none;
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+  color: #E3120B;
+  font-size: 14px; 
+}
+
+.error.showerror { display: block; }
+
+.main-controls {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  margin: 6px 0;
+  -ms-flex-preferred-size: 47%;
+  flex-basis: 47%;
+  position: relative;
+}
+
+
+.form-control input {
+  width: 100%;
+  padding: 12px 9px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 
 
+.main-controls ::-webkit-input-placeholder { font-size: 16px; }
+.main-controls ::-moz-placeholder { font-size: 16px; }
+.main-controls :-ms-input-placeholder { font-size: 16px; }
+.main-controls ::-ms-input-placeholder { font-size: 16px; }
+.main-controls ::placeholder { font-size: 16px; }
+
+
+
+.submit{
+  width: 97%;
+  margin: 10px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;    
+  position: relative;    
+}
+
+.submit .form-control { -ms-flex-preferred-size: 70%; flex-basis: 70%; }
+
+.submit-btn {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 15px 0;
+  font-size: 18px;
+  -webkit-transition: ease .4s;
+  -o-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  color: #d2d2d2;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 2px solid;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  color: #6e6e6e;
+  font-size: 25px;
+  text-align: center;
+}
+
+.footer-bottom a {color: #6e6e6e;}
+.footer-bottom a:hover { color: #fe7371;}
 
  /*=================================
   footer styling ends here
@@ -583,6 +802,60 @@ header h1 a:hover {  color: #00993b;}
 .main-menu li{ display: block; }
 
 nav { width: 100%; }
+
+/* stay-safe */
+.staysafe-text{
+  flex-basis: 64%;
+}
+
+.india-updates h3 {
+  font-size: 49px;
+  word-spacing: 9px;
+}
+
+.corona-virus .wrapper { 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+ }
+
+ .corona-virus figure {
+  margin-bottom: 41px;
+}
+
+.corona-symptoms ul {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.corona-symptoms ul li {
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 34%;
+}
+
+.prevent-section ul{
+  display: inline-block;
+}
+
+.prevent-section figure {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+.prevent-section p {
+  font-size: 26px; 
+}
+
 
 
 
