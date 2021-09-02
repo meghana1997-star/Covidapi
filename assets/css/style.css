@@ -843,20 +843,12 @@ nav { width: 100%; }
   flex-basis: 34%;
 }
 
-.prevent-section ul{
-  display: inline-block;
-}
+.prevent-section ul{ display: inline-block; }
 
 .prevent-section figure {
   -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
 }
 
-.prevent-section p {
-  font-size: 26px; 
-}
-
-
-
-
+.prevent-section p { font-size: 26px; }
 }  
