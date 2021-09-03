@@ -195,6 +195,9 @@ header h1 a:hover { color: #fe7371;}
   align-items: center;
 }
 
+.main-menu li{
+  padding:15px 25px;
+}
 .main-menu a {
   font-size: 21px;
   font-weight: 600;
@@ -405,27 +408,27 @@ header h1 a:hover { color: #fe7371;}
 /* coronavirus symptoms section end */
 
 /* prevention section start*/
-.prevent-section{ padding: 65px 0; }
+.prevention-section{ padding: 65px 0; }
 
-.prevent-section h5{
+.prevention-section h5{
   font-size: 50px;
   text-align: center;
 }
 
-.prevent-section ul{
+.prevention-section ul{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 61px 0;
 }
 
-.prevent-section p {
+.prevention-section p {
   padding: 15px;
   font-size: 16px;
   line-height: 1.4;
 }
 
-.prevent-section li {
+.prevention-section li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,7 +441,7 @@ header h1 a:hover { color: #fe7371;}
   padding: 12px;
 }
 
-.prevent-section figure{
+.prevention-section figure{
   -ms-flex-preferred-size: 88%; 
   flex-basis:88%;
 }
