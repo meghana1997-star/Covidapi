@@ -377,6 +377,7 @@ header h1 a:hover { color: #fe7371;}
   font-size: 50px;
   text-align: center;
 }
+<<<<<<< HEAD
 
 .prevention-section ul{
   display: flex;
@@ -510,6 +511,141 @@ header h1 a:hover { color: #fe7371;}
 
 .datewise li:nth-child(3),.statewise li:nth-child(3){color:#008000;}
 
+=======
+
+.prevention-section ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 61px 0;
+}
+
+.prevention-section p {
+  padding: 15px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.prevention-section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+  -ms-flex-preferred-size: 26%; 
+  flex-basis: 26%;
+  padding: 12px;
+}
+
+.prevention-section figure{
+  -ms-flex-preferred-size: 88%; 
+  flex-basis:88%;
+}
+/*prevention section end*/
+  
+/* ----------------------------------------statewise details page start --------------------------- */
+.list_sec {
+  padding: 100px 0;
+  background-color: #fe7371;
+}
+
+.list_sec h2{
+  font-size: 29px;
+  word-spacing: 5px;
+  color:#f8f1f1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.covid-19{
+  background-color: red;
+  padding:5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  text-shadow: 0 8px 10px rgba(0,0,0,0.5);
+}
+
+.india{
+  background-color: blue;
+  padding:5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  text-shadow: 0 8px 10px rgba(0,0,0,0.5);
+  animation: india 3s alternate infinite;
+}
+
+@keyframes india{
+  0%{background-color: green;}
+  40%{background-color:red;}
+  60%{background-color:red;}
+  80%{background-color:blue;}
+  100%{background-color: blue;}
+}
+
+.list_sec form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 70px 0;
+}
+
+.list_sec .select {
+  width: 60%;
+  padding: 15px 25px;
+  border: 0;
+  color: #fe7371;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+}
+
+.list_sec .select option {padding: 50px 0;}
+
+.datewise,.statewise{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 44px 75px;
+}
+
+.datewise li,.statewise li{
+  width: 23%;
+  padding: 16px 0px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.datewise h3,.statewise h3{
+  padding: 16px;
+  font-size: 21px; 
+}
+.datewise h4{
+  padding: 16px;
+  font-size: 21px; 
+}
+
+.datewise p,.statewise p { 
+  font-size:30px;
+  font-weight: 600;
+}
+
+.datewise li:nth-child(1),.statewise li:nth-child(1){color:#f1f141;}
+
+.datewise li:nth-child(2),.statewise li:nth-child(2){color:#149B92;}
+
+.datewise li:nth-child(3),.statewise li:nth-child(3){color:#008000;}
+
+>>>>>>> feature-css
 .datewise li:nth-child(4),.statewise li:nth-child(4){color:#fc2f2f;}
 /* ----------------------------------------statewise details  page end --------------------------- */
 /*=================================
@@ -587,6 +723,7 @@ footer h6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 
 .social-list li { 
   margin: 8px 10px 8px 0;
@@ -639,6 +776,60 @@ footer h6 {
   content: "\f2b3";
 }
 
+=======
+
+.social-list li { 
+  margin: 8px 10px 8px 0;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+.social-list a {
+  text-indent: -9999px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-list a::before {
+  padding: 11px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: right;
+  background-color:#fff ;
+  color: #888;
+  font: 100 21px "Font Awesome 5 Brands";
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-indent: 0;
+}
+
+.social-list li:nth-child(1) a::before {
+  content: "\f39e";
+  padding: 11px 14px;
+}
+
+.social-list li:nth-child(2) a::before {
+  content: "\f099";
+}
+.social-list li:nth-child(3) a::before {
+  content: "\f09e";
+  font: 900 21px "Font Awesome 5 Free";
+}
+
+.social-list li:nth-child(4) a::before {
+  content: "\f0e1";
+}
+.social-list li:nth-child(5) a::before {
+  content: "\f2b3";
+}
+
+>>>>>>> feature-css
 .social a:hover::before {
   background-color: #888;
   color: #fe7371;
@@ -753,6 +944,7 @@ footer h6 {
   transition: ease .4s;
   background-color: #4dbadf;
 }
+<<<<<<< HEAD
 
 .main-menu a { color: #fff; }
 
@@ -792,6 +984,47 @@ nav { width: 100%; }
   flex-wrap: wrap;
 }
 
+=======
+
+.main-menu a { color: #fff; }
+
+.main-menu.active { 
+  -webkit-transform: scaleY(1); 
+  -ms-transform: scaleY(1); 
+  transform: scaleY(1); 
+}
+
+.main-menu li{ display: block; }
+
+nav { width: 100%; }
+
+/* stay-safe */
+.staysafe-text{ flex-basis: 64%; }
+
+.corona-virus .wrapper { 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+ }
+
+ .corona-virus figure { margin-bottom: 41px; }
+
+.corona-symptoms ul {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+>>>>>>> feature-css
 .corona-symptoms ul li {
   -ms-flex-preferred-size: 48%;
   flex-basis: 34%;
@@ -843,8 +1076,12 @@ footer h4 { font-size: 20px; }
     -ms-flex-preferred-size: 30%;
     flex-basis: 36%;
 }
+<<<<<<< HEAD
   .prevention-section p {
     font-size: 31px;
 }
+=======
+  .prevention-section p { font-size: 31px; }
+>>>>>>> feature-css
 
 }

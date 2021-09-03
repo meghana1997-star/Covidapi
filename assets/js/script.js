@@ -253,7 +253,6 @@ if (page_path.includes('state.html')) {
                 }
             }
         };
-
         xmlhttp.open("GET", "https://data.covid19india.org/data.json", true);
         xmlhttp.send();
     });
