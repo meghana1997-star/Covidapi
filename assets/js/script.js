@@ -280,7 +280,7 @@ if (page_path.includes('date.html')) {
                 if (xmlhttp.status == 200) {
                     data = JSON.parse(xmlhttp.responseText);
                     data.cases_time_series.forEach(function (value) {
-
+                        // display dates in form select dropdown
                         html += `<option value="${value.date}">${value.date}</option>`
                         select.innerHTML = html
                     });
