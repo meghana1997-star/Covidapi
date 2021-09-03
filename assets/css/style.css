@@ -247,10 +247,12 @@ header h1 a:hover { color: #fe7371;}
 
 .staysafe-text {
   font-size: 50px;
-    
+  
+  -ms-flex-align: center;
+  align-items: center;
     text-align: center;
-    -ms-flex-preferred-size: 41%;
-    flex-basis: 41%;
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
 }
 
 .corona{
@@ -278,28 +280,30 @@ header h1 a:hover { color: #fe7371;}
   text-align: center;  
 }
 .state-data {
- 
   margin: 38px 0 28px 26px;
   display: flex;
   flex-wrap: wrap;
   width: 98%;
+  
 }
+
+
+
 .state-data li {
-  display: block; 
-  -ms-flex-preferred-size: 19%;
-  flex-basis: 19%;
+  display: block;
+  
+  flex-basis: 19.2%;
 }
 
 .info li {
   padding: 24px 0;
+  text-align: center;
   font-size: 14px;
   background-color: white;
-  text-align: center;
 }
 
-.info h4 {
-  font-size: 25px;
- 
+.info h3 {
+  font-size: 21px;
 }
 
 .info li:first-child {
@@ -307,6 +311,11 @@ header h1 a:hover { color: #fe7371;}
   background-color: #000;
   color: #fff;
 }
+
+.state-data:nth-child(9) .info-one li:nth-child(2)
+{padding:16px;}
+
+
 
 .info-two li:first-child, .info-four li:first-child {
   background-color: #616161;
@@ -500,25 +509,71 @@ header h1 a:hover { color: #fe7371;}
 
 .list_sec .select option {padding: 50px 0;}
 
-.statewise{
+.datewise,.statewise{
   text-align: center;
   display: flex;
   justify-content: space-around;
   padding: 44px 75px;
 }
 
-.statewise li{
+.datewise li,.statewise li{
   width: 23%;
+  padding: 16px 0px;
   border-radius: 5px;
   background-color: #fff;
   margin-bottom: 10px;
 }
 
-.statewise h4{
+.datewise h3,.statewise h3{
   padding: 16px;
-  font-size: 21px;
-  font-weight: 600;
+  font-size: 21px; 
 }
+.datewise h4{
+  padding: 16px;
+  font-size: 21px; 
+}
+
+.datewise p,.statewise p{ font-size:30px;
+  font-weight: 600;
+  }
+
+.datewise li:nth-child(1),.statewise li:nth-child(1){color:#f1f141;}
+
+.datewise li:nth-child(2),.statewise li:nth-child(2){color:#149B92;}
+
+.datewise li:nth-child(3),.statewise li:nth-child(3){color:#008000;}
+
+.datewise li:nth-child(4),.statewise li:nth-child(4){color:#fc2f2f;}
+
+
+.day-input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: bolder;
+  color: #272727;
+  position: relative;
+}
+
+input[type='date'] {
+  font-size: 17px;
+  padding: 10px;
+}
+
+
+
 
 /* ----------------------------------------statewise details  page end --------------------------- */
 
@@ -587,7 +642,10 @@ footer h6 {
 }
 
 .footer-submenu a:hover,
-.navigation-list a:hover { text-decoration: underline; }
+.navigation-list a:hover { 
+  color: #fe7371;
+  text-decoration: underline;
+ }
 
 .contact { -ms-flex-preferred-size: 35%; flex-basis: 35%; }
 
@@ -603,58 +661,63 @@ footer h6 {
 }
 
 .social-list li { 
-  margin: 8px 5px 8px 0;
+  margin: 8px 10px 8px 0;
   -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
 }
 
-.social-list li { 
-  text-indent: -99999px;
-  float: left;
-}
-
 .social-list a {
-  width: 38px;
-  height: 38px;
+  text-indent: -9999px;
   border-radius: 50%;
-  display: inline-block;
-  position: relative;
   background-color: #fff;
 }
 
-.social-list a::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-family: fontAwesome;
-  font-size: 25px;
-  color: #353a3e;
-  -webkit-transition: ease .4s;
-  -o-transition: ease .4s;
-  transition: ease .4s;
+.social-list a::before {
+  padding: 11px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: right;
+  background-color:#fff ;
+  color: #888;
+  font: 100 21px "Font Awesome 5 Brands";
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-indent: 0;
 }
 
-.facebook::after { content: '\f09a'; }
-.instagram::after { content: '\f16d'; }
-.twitter::after { content: '\f099'; }
-.linkdin::after { content: '\f0e1'; }
-.youtube::after { content: '\f167'; }
-.flicker::after { content: '\f16e'; }
-.android::after { content: '\f17b'; }
-.applestore::after { content: '\f179'; }
+.social-list li:nth-child(1) a::before {
+  content: "\f39e";
+  padding: 11px 14px;
+}
 
-.social-list a:hover::after { opacity: .5; }
+.social-list li:nth-child(2) a::before {
+  content: "\f099";
+}
+.social-list li:nth-child(3) a::before {
+  content: "\f09e";
+  font: 900 21px "Font Awesome 5 Free";
+}
 
+.social-list li:nth-child(4) a::before {
+  content: "\f0e1";
+}
+.social-list li:nth-child(5) a::before {
+  content: "\f2b3";
+}
 
+.social a:hover::before {
+  background-color: #888;
+  color: #fe7371;
+}
 
 .error { 
   display: none;
-  position: absolute;
-  bottom: -8px;
-  left: 0px;
   color: #E3120B;
   font-size: 14px; 
 }
@@ -677,25 +740,27 @@ footer h6 {
 }
 
 .form-control {
-  margin: 6px 0;
-  -ms-flex-preferred-size: 47%;
+  margin:10px 0;
+ -ms-flex-preferred-size: 47%;
   flex-basis: 47%;
-  position: relative;
 }
 
-
-.form-control input {
-  width: 100%;
+.form-control input,.msg {
   padding: 12px 9px;
   border-radius: 5px;
   border: none;
   outline: none;
-  margin: 10px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+.form-control input { width: 100%; }
 
+.msg{
+  width: 98%;
+  height: 106px;
+  resize:none;  
+}
 
 .main-controls ::-webkit-input-placeholder { font-size: 16px; }
 .main-controls ::-moz-placeholder { font-size: 16px; }
@@ -703,24 +768,6 @@ footer h6 {
 .main-controls ::-ms-input-placeholder { font-size: 16px; }
 .main-controls ::placeholder { font-size: 16px; }
 
-
-
-.submit{
-  width: 97%;
-  margin: 10px 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;    
-  position: relative;    
-}
-
-.submit .form-control { -ms-flex-preferred-size: 70%; flex-basis: 70%; }
 
 .submit-btn {
   padding: 12px 20px;
@@ -735,24 +782,25 @@ footer h6 {
 }
 
 .submit-btn:hover {
-  background-color: #000;
-  color: #d2d2d2;
+  background-color: #fff;
+  color: #fe7371;
 }
 
 .footer-bottom {
-  padding-top: 30px;
+  padding: 36px;
   border-top: 2px solid;
-  margin-top: 30px;
 }
 
 .footer-bottom p {
   color: #6e6e6e;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
 }
-
-.footer-bottom a {color: #6e6e6e;}
-.footer-bottom a:hover { color: #fe7371;}
+.top {
+  width: 36px;
+  position: absolute;
+  right: 30px;
+}
 
  /*=================================
   footer styling ends here
@@ -808,11 +856,6 @@ nav { width: 100%; }
   flex-basis: 64%;
 }
 
-.india-updates h3 {
-  font-size: 49px;
-  word-spacing: 9px;
-}
-
 .corona-virus .wrapper { 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,6 +885,9 @@ nav { width: 100%; }
   -ms-flex-preferred-size: 48%;
   flex-basis: 34%;
 }
+.corona-symptoms p {
+  font-size: 29px;
+}
 
 .prevent-section ul{ display: inline-block; }
 
@@ -851,4 +897,23 @@ nav { width: 100%; }
 }
 
 .prevent-section p { font-size: 26px; }
+
+.footer-up { 
+  -webkit-box-orient: vertical; 
+  -webkit-box-direction: normal; 
+  -ms-flex-direction: column; 
+  flex-direction: column; 
+}
+
+footer h4 { font-size: 20px; }
+
+.footer-submenu a, 
+.footer-menu { width: 100%; }
+
+.footer-item { 
+  -ms-flex-preferred-size: 25%; 
+  flex-basis: 25%; 
+}
+
+.form-control { flex-basis: 100%; }
 }  
