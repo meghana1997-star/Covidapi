@@ -741,58 +741,7 @@ footer h6 {
   border-radius: 50%;
   float: right;
   background-color:#fff ;
-  color: #888;
-  font: 100 21px "Font Awesome 5 Brands";
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-indent: 0;
-}
-
-.social-list li:nth-child(1) a::before {
-  content: "\f39e";
-  padding: 11px 14px;
-}
-
-.social-list li:nth-child(2) a::before {
-  content: "\f099";
-}
-.social-list li:nth-child(3) a::before {
-  content: "\f09e";
-  font: 900 21px "Font Awesome 5 Free";
-}
-
-.social-list li:nth-child(4) a::before {
-  content: "\f0e1";
-}
-.social-list li:nth-child(5) a::before {
-  content: "\f2b3";
-}
-
-.social-list li { 
-  margin: 8px 10px 8px 0;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
-}
-
-.social-list a {
-  text-indent: -9999px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.social-list a::before {
-  padding: 11px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  float: right;
-  background-color:#fff ;
-  color: #888;
+  color: #000;
   font: 100 21px "Font Awesome 5 Brands";
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -866,7 +815,6 @@ footer h6 {
 .main-controls :-ms-input-placeholder { font-size: 16px; }
 .main-controls ::-ms-input-placeholder { font-size: 16px; }
 .main-controls ::placeholder { font-size: 16px; }
-
 
 .submit-btn {
   padding: 12px 20px;
@@ -968,7 +916,7 @@ nav { width: 100%; }
   flex-direction: column;
  }
 
- .corona-virus figure { margin-bottom: 41px; }
+.corona-virus figure { margin-bottom: 41px; }
 
 .corona-symptoms ul {
   -ms-flex-wrap: wrap;
@@ -1006,7 +954,7 @@ nav { width: 100%; }
   flex-direction: column;
  }
 
- .corona-virus figure { margin-bottom: 41px; }
+.corona-virus figure { margin-bottom: 41px; }
 
 .corona-symptoms ul {
   -ms-flex-wrap: wrap;
@@ -1063,11 +1011,9 @@ footer h4 { font-size: 20px; }
   .prevention-section figure {
     -ms-flex-preferred-size: 30%;
     flex-basis: 36%;
-}
+  }
 
-  .prevention-section p {
-    font-size: 31px;
-}
+  .prevention-section p { font-size: 31px; }
 
 .prevention-section p { font-size: 31px; }
 

@@ -264,17 +264,13 @@ if (page_path.includes('state.html')) {
 var page_path = window.location.href;
 if (page_path.includes('date.html')) {
     var select = document.querySelector('.select');
-
-
     window.addEventListener('load', datewisedata)
 
     function datewisedata() {
         var xmlhttp = new XMLHttpRequest();
 
         xmlhttp.onreadystatechange = function () {
-
             var html = "<option value=''>---Select Date---</option>";
-
             if (xmlhttp.readyState == XMLHttpRequest.DONE) {
                 if (xmlhttp.status == 200) {
                     data = JSON.parse(xmlhttp.responseText);
