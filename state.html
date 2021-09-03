@@ -5,8 +5,7 @@
 
 <head>
   <meta charset="utf-8" />
-
-  <title>Client</title>
+  <title>Covid App</title>
 
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
   <!-- <meta name="description" lang="en" content=""> -->
@@ -24,7 +23,7 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" />
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" />
@@ -45,62 +44,99 @@
           <a href="#FIXME" title="Covid">COVIDAPP</a>
         </h1>
         <nav>
+          <div class="humburger desktop-none">
+            <span class="bar1">bar1</span>
+          </div>
           <ul class="main-menu">
-            <li><a href="index.html" title="Home" class="active">Home</a></li>
-            <li><a href="state.html" title="Statewise">Statewise</a></li>
-            <li><a href="datewise.html" title="Datewise">Datewise</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="state.html" title="Statewise" class="active">StateWise</a></li>
+            <li><a href="date.html" title="Datewise">DateWise</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <body>
-      <!--container starts here-->
-      <div class="container">
-        <!--header starts here-->
-        <header>
-
-        </header>
-        <!--header ends here-->
-
-        <!--main starts here-->
-        <main>
-          <section id="list_sec">
-            <div class="wrapper">
-              <form action="#FIXME">
-                <select name='select-state' class="select">
-                  <option value="Select state name">-- select state --</option>
-                </select>
-              </form>
-
-              <div class="result load" id="results">
-                <ul class="statewise">
-
-                </ul>
+    <!--header section end-->
+    <!--main starts here-->
+    <main>
+      <section class="list_sec">
+        <div class="wrapper">
+          <h2><span class="covid-19"> COVID-19 </span> STATEWISE TRACKER LIVE <span class="india"> INDIA </span></h2>
+          <form action="#FIXME">
+            <select name='select-state' class="select">
+              <option value="">-- Select State --</option>
+            </select>
+          </form>
+          <ul class="statewise">
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--main ends here-->
+    <footer>
+      <div class="wrapper">
+        <div class="footer-up">
+          <ul class="footer-menu">
+            <li class="footer-item">
+              <h6>Popular Apps</h6>
+              <ul class="footer-submenu">
+                <li class="submenu-item"><a href="#FIXME" title="Aarogya">Aarogya Setu</a></li>
+                <li class="submenu-item"><a href="#FIXME" title="Umang">Umang</a></li>
+                <li class="submenu-item"><a href="#FIXME" title="Co-win">Co-WIN</a></li>
+              </ul>
+            </li>
+            <li class="social">
+              <h6>Follow us on</h6>
+              <ul class="social-list">
+                <li><a href="#FIXME" title="Facebook" target="_blank">Facebook</a></li>
+                <li><a href="#FIXME" title="Twitter" target="_blank">Twitter</a></li>
+                <li><a href="#FIXME" title="Rss" target="_blank">Rss</a></li>
+                <li><a href="#FIXME" title="Linkdin" target="_blank">Linkdin</a></li>
+                <li><a href="#FIXME" title="Google" target="_blank">Google</a></li>
+              </ul>
+            </li>
+            <li class="navigation">
+              <h6>Navigation</h6>
+              <ul class="navigation-list">
+                <li><a href="#FIXME" title="Home">Home</a></li>
+                <li><a href="#FIXME" title="Statewise">StateWise</a></li>
+                <li><a href="#FIXME" title="Datewise">DateWise</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="contact">
+            <h6>Contact us</h6>
+            <form action="#" class="contact-form">
+              <div class="main-controls">
+                <div class="form-control">
+                  <input type="text" placeholder="Full Name" class="fname">
+                  <span class="error">error msg</span>
+                </div>
+                <div class="form-control">
+                  <input type="text" placeholder="Email" class="email">
+                  <span class="error">error msg</span>
+                </div>
               </div>
-
-
-            </div>
-          </section>
-        </main>
-        <!--main ends here-->
-
-
-        <!-- footer top end -->
-
-        <!-- footer bottom start -->
-
-        <!-- footer bottom end -->
-
-        <!--footer ends here-->
+              <div class="form-control">
+                <textarea placeholder="Message" class="msg"></textarea>
+                <span class="error">error msg</span>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Submit" class="submit-btn">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <!--container ends here-->
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p>&copy; copyright 2021 Covid19 Tracker.All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-      <!-- jq cdn -->
-
-
-      <!-- external javascript link -->
-      <script src="assets/js/script.js"></script>
-    </body>
+  <!-- external javascript link -->
+  <script src="assets/js/script.js"></script>
+</body>
 
 </html>
