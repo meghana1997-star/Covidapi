@@ -92,7 +92,7 @@ if (page_path.includes('index.html')) {
                         <li>
                           <ul class="info-one info">
                             <li>
-                              <h3>state</h3>
+                              <h4>state</h4>
                             </li>
                             <li>${filterIndexData.state}</li>
                           </ul>
@@ -100,7 +100,7 @@ if (page_path.includes('index.html')) {
                         <li>
                           <ul class="info-two info">
                             <li>
-                              <h3>confirmed</h3>
+                              <h4>confirmed</h4>
                             </li>
                             <li>${filterIndexData.confirmed}</li>
                           </ul>
@@ -108,7 +108,7 @@ if (page_path.includes('index.html')) {
                         <li>
                           <ul class="info-three info">
                             <li>
-                              <h3>active</h3>
+                              <h4>active</h4>
                             </li>
                             <li>${filterIndexData.active}</li>          
                           </ul>
@@ -116,7 +116,7 @@ if (page_path.includes('index.html')) {
                         <li>
                           <ul class="info-four info">
                             <li>
-                              <h3>recovered</h3>
+                              <h4>recovered</h4>
                             </li>
                             <li>${filterIndexData.recovered}</li>          
                           </ul>
@@ -124,7 +124,7 @@ if (page_path.includes('index.html')) {
                         <li>
                           <ul class="info-three info">
                             <li>
-                              <h3>deaths</h3>
+                              <h4>deaths</h4>
                             </li>
                             <li>${filterIndexData.deaths}</li>         
                           </ul>
