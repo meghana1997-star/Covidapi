@@ -377,7 +377,6 @@ header h1 a:hover { color: #fe7371;}
   font-size: 50px;
   text-align: center;
 }
-<<<<<<< HEAD
 
 .prevention-section ul{
   display: flex;
@@ -511,8 +510,6 @@ header h1 a:hover { color: #fe7371;}
 
 .datewise li:nth-child(3),.statewise li:nth-child(3){color:#008000;}
 
-=======
-
 .prevention-section ul{
   display: flex;
   justify-content: space-between;
@@ -645,7 +642,6 @@ header h1 a:hover { color: #fe7371;}
 
 .datewise li:nth-child(3),.statewise li:nth-child(3){color:#008000;}
 
->>>>>>> feature-css
 .datewise li:nth-child(4),.statewise li:nth-child(4){color:#fc2f2f;}
 /* ----------------------------------------statewise details  page end --------------------------- */
 /*=================================
@@ -723,7 +719,7 @@ footer h6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-<<<<<<< HEAD
+
 
 .social-list li { 
   margin: 8px 10px 8px 0;
@@ -746,7 +742,7 @@ footer h6 {
   border-radius: 50%;
   float: right;
   background-color:#fff ;
-  color: #888;
+  color: #000;
   font: 100 21px "Font Awesome 5 Brands";
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -776,60 +772,6 @@ footer h6 {
   content: "\f2b3";
 }
 
-=======
-
-.social-list li { 
-  margin: 8px 10px 8px 0;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
-}
-
-.social-list a {
-  text-indent: -9999px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.social-list a::before {
-  padding: 11px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  float: right;
-  background-color:#fff ;
-  color: #888;
-  font: 100 21px "Font Awesome 5 Brands";
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-indent: 0;
-}
-
-.social-list li:nth-child(1) a::before {
-  content: "\f39e";
-  padding: 11px 14px;
-}
-
-.social-list li:nth-child(2) a::before {
-  content: "\f099";
-}
-.social-list li:nth-child(3) a::before {
-  content: "\f09e";
-  font: 900 21px "Font Awesome 5 Free";
-}
-
-.social-list li:nth-child(4) a::before {
-  content: "\f0e1";
-}
-.social-list li:nth-child(5) a::before {
-  content: "\f2b3";
-}
-
->>>>>>> feature-css
 .social a:hover::before {
   background-color: #888;
   color: #fe7371;
@@ -944,7 +886,6 @@ footer h6 {
   transition: ease .4s;
   background-color: #4dbadf;
 }
-<<<<<<< HEAD
 
 .main-menu a { color: #fff; }
 
@@ -984,8 +925,6 @@ nav { width: 100%; }
   flex-wrap: wrap;
 }
 
-=======
-
 .main-menu a { color: #fff; }
 
 .main-menu.active { 
@@ -1024,7 +963,6 @@ nav { width: 100%; }
   flex-wrap: wrap;
 }
 
->>>>>>> feature-css
 .corona-symptoms ul li {
   -ms-flex-preferred-size: 48%;
   flex-basis: 34%;
@@ -1076,12 +1014,9 @@ footer h4 { font-size: 20px; }
     -ms-flex-preferred-size: 30%;
     flex-basis: 36%;
 }
-<<<<<<< HEAD
   .prevention-section p {
     font-size: 31px;
 }
-=======
   .prevention-section p { font-size: 31px; }
->>>>>>> feature-css
 
 }
