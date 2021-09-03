@@ -186,6 +186,7 @@ header h1 a {
 }
 
 header h1 a:hover { color: #fe7371;}
+
 .main-menu { 
   display: -webkit-box; 
   display: -ms-flexbox; 
@@ -195,39 +196,23 @@ header h1 a:hover { color: #fe7371;}
   align-items: center;
 }
 
-.main-menu li{
-  padding:15px 25px;
-}
+.main-menu li{ padding:15px 25px; }
+
 .main-menu a {
   font-size: 21px;
   font-weight: 600;
   text-transform: capitalize;
-  margin: 0 18px;
-  
+  margin: 0 18px;  
   color: #000;
   -webkit-transition: ease .4s;
   -o-transition: ease .4s;
   transition: ease .4s;
 }
 
-.main-menu a.active{
+.main-menu a.active,.main-menu a:hover{
   color:#fe7371; 
   text-decoration: underline;
 }
-.main-menu a:hover{
-  color:#fe7371; 
-  text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -250,12 +235,9 @@ header h1 a:hover { color: #fe7371;}
 
 .staysafe-text {
   font-size: 50px;
-  
-  -ms-flex-align: center;
-  align-items: center;
-    text-align: center;
-    -ms-flex-preferred-size: 46%;
-    flex-basis: 46%;
+  text-align: center;
+  -ms-flex-preferred-size: 46%;
+  flex-basis: 46%;
 }
 
 .corona{
@@ -263,18 +245,12 @@ header h1 a:hover { color: #fe7371;}
   flex-basis: 18%;
 } 
 
-
-
-
-
-
-
-
 /* india-updates section start*/
 .india-updates{
   background-color:#4dbadf;
   padding: 39px 32px;
 }
+
 .india-updates h3{
   font-size: 50px;
   word-spacing: 12px;
@@ -282,19 +258,16 @@ header h1 a:hover { color: #fe7371;}
   color:#f8f1f1;
   text-align: center;  
 }
+
 .state-data {
   margin: 38px 0 28px 26px;
   display: flex;
   flex-wrap: wrap;
-  width: 98%;
-  
+  width: 98%;  
 }
 
-
-
 .state-data li {
-  display: block;
-  
+  display: block;  
   flex-basis: 19.2%;
 }
 
@@ -315,22 +288,16 @@ header h1 a:hover { color: #fe7371;}
   color: #fff;
 }
 
-.state-data:nth-child(9) .info-one li:nth-child(2)
-{padding:16px;}
+.state-data:nth-child(9) .info-one li:nth-child(2){ padding:16px; }
 
+.info-two li:first-child, .info-four li:first-child { background-color: #616161; }
 
+.fetch{ text-align: center; }
 
-.info-two li:first-child, .info-four li:first-child {
-  background-color: #616161;
-}
-
-.fetch{
-  text-align: center;
-}
 .fetchBtn{
   padding: 10px 30px;
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 .fetch a:hover{
@@ -343,7 +310,7 @@ header h1 a:hover { color: #fe7371;}
   display: none;
 }
 /* india-updates section end*/
-
+/* corona-virus section start*/
 .corona-virus .wrapper{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,10 +344,8 @@ header h1 a:hover { color: #fe7371;}
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
-.corona-text .para{
-  padding-top: 19px;
-}
-
+.corona-text .para{ padding-top: 19px; }
+/* corona-virus section start*/
 /* coronavirus symptoms section start */
 .corona-symptoms h4{
   font-size: 50px;
@@ -389,9 +354,9 @@ header h1 a:hover { color: #fe7371;}
 
 .corona-symptoms ul{
   display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 77px 0;
+  justify-content: space-between;
+  align-items:center;
+  padding: 77px 0;
 }
 
 .corona-symptoms li{
@@ -402,11 +367,9 @@ header h1 a:hover { color: #fe7371;}
 .corona-symptoms p{
   text-align: center;
   padding-top: 15px;
-    font-size: 18px;
+  font-size: 18px;
 }
-
 /* coronavirus symptoms section end */
-
 /* prevention section start*/
 .prevention-section{ padding: 65px 0; }
 
@@ -445,8 +408,7 @@ header h1 a:hover { color: #fe7371;}
   -ms-flex-preferred-size: 88%; 
   flex-basis:88%;
 }
-
-  /*prevention section end*/
+/*prevention section end*/
   
 /* ----------------------------------------statewise details page start --------------------------- */
 .list_sec {
@@ -536,9 +498,10 @@ header h1 a:hover { color: #fe7371;}
   font-size: 21px; 
 }
 
-.datewise p,.statewise p{ font-size:30px;
+.datewise p,.statewise p { 
+  font-size:30px;
   font-weight: 600;
-  }
+}
 
 .datewise li:nth-child(1),.statewise li:nth-child(1){color:#f1f141;}
 
@@ -547,42 +510,7 @@ header h1 a:hover { color: #fe7371;}
 .datewise li:nth-child(3),.statewise li:nth-child(3){color:#008000;}
 
 .datewise li:nth-child(4),.statewise li:nth-child(4){color:#fc2f2f;}
-
-
-.day-input {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-label {
-  font-size: 18px;
-  margin-right: 10px;
-  font-weight: bolder;
-  color: #272727;
-  position: relative;
-}
-
-input[type='date'] {
-  font-size: 17px;
-  padding: 10px;
-}
-
-
-
-
 /* ----------------------------------------statewise details  page end --------------------------- */
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -602,7 +530,6 @@ footer h6 {
   font-size: 24px;
   font-weight: bold;
 }
-
 /* footer up start */
 .footer-up { 
   padding: 40px 0 26px;
@@ -631,7 +558,7 @@ footer h6 {
 .footer-menu li {
   display: block;
   -ms-flex-preferred-size: 31%;
-  flex-basis: 31%;
+  flex-basis: 25%;
 }
 
 .footer-submenu a,
@@ -649,8 +576,6 @@ footer h6 {
   color: #fe7371;
   text-decoration: underline;
  }
-
-.contact { -ms-flex-preferred-size: 35%; flex-basis: 35%; }
 
 /* Social icon start */
 .social-list {
@@ -719,6 +644,9 @@ footer h6 {
   color: #fe7371;
 }
 
+/* contact start */
+.contact { -ms-flex-preferred-size: 35%; flex-basis: 35%; }
+
 .error { 
   display: none;
   color: #E3120B;
@@ -727,23 +655,8 @@ footer h6 {
 
 .error.showerror { display: block; }
 
-.main-controls {
-  width: 97%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
 .form-control {
-  margin:10px 0;
+  margin:19px 0;
  -ms-flex-preferred-size: 47%;
   flex-basis: 47%;
 }
@@ -760,8 +673,8 @@ footer h6 {
 .form-control input { width: 100%; }
 
 .msg{
-  width: 98%;
-  height: 106px;
+  width: 100%;
+  height: 108px;
   resize:none;  
 }
 
@@ -843,7 +756,6 @@ footer h6 {
 
 .main-menu a { color: #fff; }
 
-
 .main-menu.active { 
   -webkit-transform: scaleY(1); 
   -ms-transform: scaleY(1); 
@@ -855,9 +767,7 @@ footer h6 {
 nav { width: 100%; }
 
 /* stay-safe */
-.staysafe-text{
-  flex-basis: 64%;
-}
+.staysafe-text{ flex-basis: 64%; }
 
 .corona-virus .wrapper { 
   display: -webkit-box;
@@ -875,9 +785,7 @@ nav { width: 100%; }
   flex-direction: column;
  }
 
- .corona-virus figure {
-  margin-bottom: 41px;
-}
+ .corona-virus figure { margin-bottom: 41px; }
 
 .corona-symptoms ul {
   -ms-flex-wrap: wrap;
@@ -888,18 +796,23 @@ nav { width: 100%; }
   -ms-flex-preferred-size: 48%;
   flex-basis: 34%;
 }
+
 .corona-symptoms p {
   font-size: 29px;
 }
 
-.prevent-section ul{ display: inline-block; }
+.prevention-section ul{ display: inline-block; }
 
-.prevent-section figure {
+.prevention-section figure {
   -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
 }
 
-.prevent-section p { font-size: 26px; }
+.prevention-section p { font-size: 26px; }
+
+.info li {
+  font-size: 21px;
+}
 
 .footer-up { 
   -webkit-box-orient: vertical; 
@@ -918,5 +831,23 @@ footer h4 { font-size: 20px; }
   flex-basis: 25%; 
 }
 
-.form-control { flex-basis: 100%; }
-}  
+.form-control input, .msg { padding: 15px 306px; }
+
+.list_sec .select {width: 75%;}
+} 
+
+@media screen and (max-width: 767px) {
+  .corona-text p { font-size: 25px; }
+
+  .prevention-section figure {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 36%;
+}
+  .prevention-section p {
+    font-size: 31px;
+}
+
+.list_sec {
+  padding: 316px 0;
+}
+}
