@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>Covid api</title>
+  <title>Covid Api</title>
 
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
   <!-- <meta name="description" lang="en" content=""> -->
@@ -24,8 +24,7 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" />
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" />
 
@@ -45,10 +44,13 @@
           <a href="#FIXME" title="Covid">COVIDAPP</a>
         </h1>
         <nav>
+          <div class="humburger desktop-none">
+            <span class="bar1">bar1</span>
+          </div>
           <ul class="main-menu">
             <li><a href="index.html" title="Home" class="active">Home</a></li>
-            <li><a href="state.html" title="Statewise">Statewise</a></li>
-            <li><a href="date.html" title="Datewise">Datewise</a></li>
+            <li><a href="state.html" title="Statewise">StateWise</a></li>
+            <li><a href="date.html" title="Datewise">DateWise</a></li>
           </ul>
         </nav>
       </div>
@@ -56,6 +58,7 @@
     <!--header section start-->
     <!--main section start-->
     <main>
+      <!-- stay-safe section start -->
       <section class="stay-safe">
         <div class="wrapper">
           <figure class="corona"><img src="assets/images/corona-virus.gif" alt="Corona"></figure>
@@ -64,21 +67,21 @@
           </div>
         </div>
       </section>
-
-      <section class="covid-heading">
+      <!-- stay-safe section end -->
+      <!-- india-updates section start -->
+      <section class="india-updates">
         <div class="wrapper">
           <h3> COVID-19 INDIA LIVE UPDATES </h3>
-          <ul class="need">
-            <li class="basic">
-              <ul class="info-one info">
+          <ul class="state-data">
+            <li>
+              <ul>
                 <li>
                   <h3>state</h3>
                 </li>
                 <li></li>
               </ul>
             </li>
-
-            <li class="pro">
+            <li>
               <ul class="info-two info">
                 <li>
                   <h3>confirmed</h3>
@@ -86,8 +89,7 @@
                 <li></li>
               </ul>
             </li>
-
-            <li class="premium">
+            <li>
               <ul class="info-three info">
                 <li>
                   <h3>active</h3>
@@ -95,8 +97,7 @@
                 <li></li>
               </ul>
             </li>
-
-            <li class="premium">
+            <li>
               <ul class="info-four info">
                 <li>
                   <h3>recovered</h3>
@@ -104,8 +105,7 @@
                 <li></li>
               </ul>
             </li>
-
-            <li class="premium">
+            <li>
               <ul class="info-three info">
                 <li>
                   <h3>active</h3>
@@ -113,49 +113,45 @@
                 <li></li>
               </ul>
             </li>
-
           </ul>
-
-          <a href="#FIXME" title="LoadMoreResults" class="fetchBtn">Load More Results</a>
+          <div class="fetch">
+            <a href="#FIXME" title="LoadMoreResults" class="fetchBtn">Load More Results</a>
+          </div>
         </div>
       </section>
+      <!-- india-updates section start -->
+      <!-- corona-virus section start -->
       <section class="corona-virus">
         <div class="wrapper">
-          <div class="corona-section">
-            <figure><img src="assets/images/about-corona.jpg" alt="Corona"></figure>
-          </div>
+          <figure><img src="assets/images/about-corona.jpg" alt="Corona"></figure>
           <div class="corona-text">
-            <h3>What is COVID-19 (Corona-Virus)</h3>
+            <h4>What is COVID-19</h4>
             <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most
               people
               who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special
               treatment.</p>
-            <p>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person
+            <p class="para">The virus that causes COVID-19 is mainly transmitted through droplets generated when an
+              infected person
               coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors
               or surfaces.</p>
           </div>
         </div>
       </section>
+      <!-- corona-virus section start -->
+      <!-- corona-symptoms section start -->
       <section class="corona-symptoms">
         <div class="wrapper">
           <h4>Coronavirus Symptoms</h4>
           <ul>
             <li>
-              <figure><img src="assets/images/cold.png" alt="Cold"></figure>
-              <p>Cold</p>
-            </li>
-            <li>
               <figure><img src="assets/images/cough.png" alt="Cough"></figure>
               <p>Cough</p>
             </li>
             <li>
-              <figure><img src="assets/images/runny-nose.png" alt="Runny-nose"></figure>
-              <p>Runny-nose</p>
+              <figure><img src="assets/images/fever.png" alt="Fever"></figure>
+              <p>Fever</p>
             </li>
-            <li>
-              <figure><img src="assets/images/fever-cough.png" alt="Fever"></figure>
-              <p>fever-cough</p>
-            </li>
+
             <li>
               <figure><img src="assets/images/tiredness.png" alt="Tiredness"></figure>
               <p>Tiredness</p>
@@ -167,7 +163,9 @@
           </ul>
         </div>
       </section>
-      <section class="prevent-section">
+      <!-- corona-symptoms section start -->
+      <!-- prevention section start -->
+      <section class="prevention-section">
         <div class="wrapper">
           <h5>6 Steps Prevention Against Coronavirus</h5>
           <ul>
@@ -176,34 +174,95 @@
               <p>Wash your hand regularly for 20 seconds, with soap and water or alcohol-based hand rub</p>
             </li>
             <li>
-              <figure><img src="assets/images/face-mask.png" alt="Hand-wash"></figure>
+              <figure><img src="assets/images/face-mask.png" alt="Face-mask"></figure>
               <p>Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze</p>
             </li>
             <li>
-              <figure><img src="assets/images/hand-wash.png" alt="Hand-wash"></figure>
+              <figure><img src="assets/images/social-distancing.png" alt="social-distancing"></figure>
               <p>Avoid close contact (1 meter or 3 feet) with unwell people</p>
             </li>
             <li>
-              <figure><img src="assets/images/social-distancing.png" alt="Hand-wash"></figure>
+              <figure><img src="assets/images/stay-home.png" alt="Stay-home"></figure>
               <p>Stay home and self-isolate from others in the household if you feel unwell</p>
             </li>
             <li>
-              <figure><img src="assets/images/stay-home.png" alt="Hand-wash"></figure>
+              <figure><img src="assets/images/news.png" alt="News"></figure>
               <p>Stay informed by watching the news & follow the recommended practices</p>
             </li>
             <li>
-              <figure><img src="assets/images/news.png" alt="Hand-wash"></figure>
+              <figure><img src="assets/images/fever-cough.png" alt="Fever-cough"></figure>
               <p>If you have a fever, cough and difficulty breathing seek medical care early</p>
             </li>
           </ul>
         </div>
       </section>
-
+      <!-- prevention section end -->
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer></footer>
+    <footer>
+      <div class="wrapper">
+        <div class="footer-up">
+          <ul class="footer-menu">
+            <li class="footer-item">
+              <h6>Popular Apps</h6>
+              <ul class="footer-submenu">
+                <li class="submenu-item"><a href="#FIXME" title="Aarogya">Aarogya Setu</a></li>
+                <li class="submenu-item"><a href="#FIXME" title="Umang">Umang</a></li>
+                <li class="submenu-item"><a href="#FIXME" title="Co-win">Co-WIN</a></li>
+              </ul>
+            </li>
+            <li class="social">
+              <h6>Follow us on</h6>
+              <ul class="social-list">
+                <li><a href="#FIXME" title="Facebook" target="_blank">Facebook</a></li>
+                <li><a href="#FIXME" title="Twitter" target="_blank">Twitter</a></li>
+                <li><a href="#FIXME" title="Rss" target="_blank">Rss</a></li>
+                <li><a href="#FIXME" title="Linkdin" target="_blank">Linkdin</a></li>
+                <li><a href="#FIXME" title="Google" target="_blank">Google</a></li>
+              </ul>
+            </li>
+            <li class="navigation">
+              <h6>Navigation</h6>
+              <ul class="navigation-list">
+                <li><a href="#FIXME" title="Home">Home</a></li>
+                <li><a href="#FIXME" title="Statewise">StateWise</a></li>
+                <li><a href="#FIXME" title="Datewise">DateWise</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="contact">
+            <h6>Contact us</h6>
+            <form action="#" class="contact-form">
+              <div class="main-controls">
+                <div class="form-control">
+                  <input type="text" placeholder="Full Name" class="fname">
+                  <span class="error">error msg</span>
+                </div>
+                <div class="form-control">
+                  <input type="text" placeholder="Email" class="email">
+                  <span class="error">error msg</span>
+                </div>
+              </div>
+              <div class="form-control">
+                <textarea placeholder="Message" class="msg"></textarea>
+                <span class="error">error msg</span>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Submit" class="submit-btn">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p>&copy; copyright 2021 Covid19 Tracker.All rights reserved.</p>
+          <a href="#FIXME" title="Top" class="top"><img src="assets/images/arr.png" alt="Top"></a>
+        </div>
+      </div>
+    </footer>
     <!--footer section end-->
   </div>
   <!--container end-->
